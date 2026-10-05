@@ -1,0 +1,23 @@
+{
+  "skill_name": "venuenexa-guide",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Soy Diovi, voy a empezar a trabajar en VenueNexa. ¿Qué hago hoy?",
+      "expected_output": "Asks/uses triage, reads ONBOARDING + Guia from WorkDrive, lists open INGENIUS-238 tasks with date/predecessors/type/role, proposes order, and does not start any task.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Vamos con PV1-T07, soy Andy. Es una tarea de arquitectura sobre el ADR de pagos.",
+      "expected_output": "Assumes Architect role, reads Bitacora-Arquitecto RESUME HERE and the task, reports state/needs/first proposal, then asks architect questions (ADR scope, alternatives, quality attributes, ARB).",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "ya terminé la tarea PV1-T07, quiero cerrar la sesión y subir lo que hice",
+      "expected_output": "Shows change summary before upload, asks approval, uploads and verifies, drafts logbook entry, confirms hours before logging, asks about pending items; no write without confirmation.",
+      "files": []
+    }
+  ]
+}

@@ -1,40 +1,44 @@
 # skills
 
-Colección de skills de Claude Code. Cada skill vive en su propia carpeta bajo `skills/`, con su `SKILL.md` (entrada del skill) y su propio `README.md` (qué hace, cómo instalarlo, contenido).
+[![License: MIT](https://img.shields.io/github/license/drobinetm/skills)](LICENSE)
+[![Last commit](https://img.shields.io/github/last-commit/drobinetm/skills)](https://github.com/drobinetm/skills/commits/main)
+[![Repo size](https://img.shields.io/github/repo-size/drobinetm/skills)](https://github.com/drobinetm/skills)
+[![Claude Code](https://img.shields.io/badge/Claude%20Code-skills-D97757)](https://docs.claude.com/en/docs/claude-code/skills)
 
-## Skills disponibles
+A collection of Claude Code skills. Each skill lives in its own top-level folder with its entry point (`SKILL.md`) and its own `README.md` (what it does, how to install it, what it contains).
 
-| Skill | Descripción |
+## Available skills
+
+| Skill | Description |
 |-------|-------------|
-| [venuenexa-guide](skills/venuenexa-guide/README.md) | Guía de sesión por rol para el proyecto VenueNexa (Ingenius): tareas PV1-Tnn, bitácora y horas. |
+| [venuenexa-guide](venuenexa-guide/README.md) | Role-based session guide for the VenueNexa project (Ingenius): PV1-Tnn tasks, logbook and billable hours. |
 
-## Instalación
+## Installation
 
-Copia (o enlaza) la carpeta del skill que quieras a tu directorio de skills:
+Copy (or symlink) the skill folder you want into your skills directory:
 
 ```bash
-# Global (todos los proyectos)
-cp -r skills/<nombre-del-skill> ~/.claude/skills/
+# Global (all projects)
+cp -r <skill-name> ~/.claude/skills/
 
-# Por proyecto
-cp -r skills/<nombre-del-skill> <repo>/.claude/skills/
+# Per project
+cp -r <skill-name> <repo>/.claude/skills/
 ```
 
-## Estructura
+## Repository layout
 
 ```
-skills/
-  <nombre-del-skill>/
-    SKILL.md        # frontmatter (name, description) + flujo
-    README.md       # documentación propia del skill
-    references/     # material que se lee bajo demanda
+<skill-name>/
+  SKILL.md        # frontmatter (name, description) + workflow
+  README.md       # the skill's own documentation
+  references/     # material read on demand
 ```
 
-## Añadir un skill nuevo
+## Adding a new skill
 
-1. Crea `skills/<nombre>/` con `SKILL.md` y `README.md`.
-2. Añade una fila a la tabla de este README.
+1. Create `<skill-name>/` at the repo root with `SKILL.md` and `README.md`.
+2. Add a row to the table above.
 
-## Licencia
+## License
 
-MIT — ver [LICENSE](LICENSE).
+MIT — see [LICENSE](LICENSE).

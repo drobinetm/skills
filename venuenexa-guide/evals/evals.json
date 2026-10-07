@@ -18,6 +18,12 @@
       "prompt": "ya terminé la tarea PV1-T07, quiero cerrar la sesión y subir lo que hice",
       "expected_output": "Shows change summary before upload, asks approval, uploads and verifies, drafts logbook entry, confirms hours before logging, asks about pending items; no write without confirmation.",
       "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Soy Diovi, empecemos el día. ¿Qué tengo pendiente en VenueNexa?",
+      "expected_output": "Reads the user's role logbooks (RESUME HERE and recent entries) and logged hours before listing; each task shows what is already done; a task whose logbook says the user's part is delivered (e.g. observations published, hours logged, waiting for approval) is marked 'hecha de tu lado, esperando a X' and is not proposed first; flags any disagreement between logbook and Zoho; does not conclude 'no hours logged' from an empty task-id time-log filter.",
+      "files": []
     }
   ]
 }

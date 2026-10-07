@@ -11,6 +11,7 @@
 
 | D-07 | 2026-10-02 | Task listing always shows PV1-Tnn number and a short description; sources are loaded from both WorkDrive and Zoho before listing | User feedback after first run | Yes: `prefix` field holds the number; `get_task_details.dependency_info` returns predecessors (checked on PV1-T7: 6 predecessors, matches description) |
 | D-08 | 2026-10-07 | Start of day reads the user's role logbooks (RESUME HERE and recent entries) and logged hours before listing tasks, and shows what is already done per task | In a real session the skill proposed PV1-T10 first although the logbook and time logs showed the user's part delivered; logbooks were read only after a task was chosen | Yes: `get_time_logs_by_project` with a task-id filter returns empty for PV1-T7 and PV1-T10 (both have hours); date range plus `{"type":"task"}` returns them |
+| D-09 | 2026-10-07 | Start of day also reads the local daily register `AGENTS/REGISTRO-DIARIO.md` as a secondary, non-authoritative source | Diovi added it to track tasks per day, status, waits and monthly hours against Zoho; it can go stale, so logbook and Zoho win on conflict | Partly: file exists and its October hours (9:20 billable, 0:30 non-billable) match Zoho time logs read the same day |
 
 ## Open verification
 - Zoho Projects lookup of INGENIUS-238 works (portal 765280574, project 1882718000010093270). No WorkDrive tool was available in the session that tested it: WorkDrive loading is still unverified.

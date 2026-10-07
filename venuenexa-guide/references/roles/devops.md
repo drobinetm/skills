@@ -13,4 +13,4 @@
 - ¿Qué se puede probar sin tocar recursos reales (dry run, plan)? No aplicar cambios en la nube ni en GitLab sin tu orden.
 
 ## Outputs
-Pipeline/IaC definitions, runbook notes, logbook entry in `Bitacora-DevOps.md`.
+Pipeline/IaC definitions, runbook notes, logbook entry in today's file of `Bitacoras/DevOps/` and the state file `Bitacora-DevOps.md`.

@@ -12,7 +12,7 @@ Goal: the user knows what is open, what is blocked, and what to take first - wit
    - Type and role are in the description text (`Tipo: GENERACIÓN CON AGENTE · rol ...` or `REVISIÓN/DECISIÓN HUMANA`). Strip the HTML.
    - Predecessors are not in the list response. Call `get_task_details` for each of the user's tasks and read `dependency_info.predecessor[].id`, then resolve those ids to `prefix` and `status` from the same list (ids missing from the open list are closed). Descriptions often also name the predecessors; if they disagree with `dependency_info`, trust `dependency_info` and mention it.
 4. **Logbooks and logged hours: what was already worked.** Zoho status alone is not enough: a task can be In Review in Zoho while the user's part is already done. Before listing, for each role the user holds (role map in `role-onboarding.md`):
-   - Read the logbook live from WorkDrive: the **RESUME HERE** block and the entries dated since the user's last session (or the last 7 days if unknown). Note, per task, what was delivered, decided and left pending.
+   - Read the logbook live from WorkDrive (ADR-VN-0005): the role's small **state file** (`Bitacora-<ROL>.md`: RESUME HERE and the pending table) and the daily files in `Bitacoras/<ROL>/` dated since the user's last session (or the last 7 days if unknown; the period before the method is one closed file). For Dev work, the repo's `docs/BITACORA.md` header. Note, per task, what was delivered, decided and left pending.
    - Read the user's time logs from Zoho for the same period (see the lookup note below) to see which tasks already have hours.
    - Cross-check each open task against both. If the logbook and Zoho disagree (e.g. Zoho says open, the logbook says delivered; or hours missing for delivered work), say so and show both; never pick one silently.
    - Read the local daily register `VENUENEXA/AGENTS/REGISTRO-DIARIO.md` (tasks worked per day, status, who they wait on, hours of the month versus Zoho). It is a local control, not a source of truth: where it disagrees with the logbook or Zoho, trust those and flag the register as stale. Anything in it marked `NO VERIFICADO` stays unverified. Update it only at close of a task or day, with targeted edits, never rewriting other agents' entries.
@@ -35,7 +35,7 @@ Tool `get_time_logs_by_project` (zoho-workdrive MCP, `ZohoProjects_*`) needs `st
 
 ## Edge cases
 - No open tasks: say so, ask whether to check blockers or pending items from the logbook (already read in step 4).
-- Logbook newer than the user expects (another person wrote an entry on a shared role): show that entry first; single writer per document applies.
+- Logbook newer than the user expects (another person wrote an entry on a shared role): show that entry first. Writing follows ADR-VN-0005: re-read before writing and append after any new entries.
 - Task has no role or type: flag it as incomplete and suggest asking Danay (PM) to fix it; do not guess.
 - Zoho unreachable: ask the user to paste their task list and continue in guidance-only mode.
 - Shared tasks (several owners): show all owners, and say which part is the user's if the description splits the work by person.

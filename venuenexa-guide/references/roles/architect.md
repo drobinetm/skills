@@ -17,4 +17,4 @@
 - (AI) ¿Qué nivel de riesgo tiene este caso de uso y qué evidencia mínima exige?
 
 ## Outputs
-Updated arc42 sections, ADR drafts with every field filled or marked PENDIENTE, logbook entry in `Architecture/Bitacora-Arquitecto.md`.
+Updated arc42 sections, ADR drafts with every field filled or marked PENDIENTE, logbook entry in today's file of `Bitacoras/Arquitecto/` and the state file `Architecture/Bitacora-Arquitecto.md`.

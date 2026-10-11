@@ -15,4 +15,4 @@
 - ¿Dónde se guarda el resultado: repositorio GitLab o WorkDrive? ¿Rama y MR? (No commit/push/MR hasta que lo ordenes.)
 
 ## Outputs
-Code or PoC with tests, short notes on assumptions, logbook entry in `Bitacora-Dev.md`.
+Code or PoC with tests, short notes on assumptions, logbook entry in `docs/BITACORA.md` of the repo you work in.

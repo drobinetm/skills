@@ -14,4 +14,4 @@
 - ¿Qué criterios de aceptación medibles asociamos?
 
 ## Outputs
-Updated requirements/matrix entries, list of open questions for the client, logbook entry in `Requirements/Bitacora-Analista.md`.
+Updated requirements/matrix entries, list of open questions for the client, logbook entry in today's file of `Bitacoras/Analista/` and the state file `Requirements/Bitacora-Analista.md`.

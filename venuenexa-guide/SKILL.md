@@ -20,10 +20,10 @@ At VenueNexa the AI agent does the work and each person directs and reviews it. 
 | Situation | Read | Core behavior |
 |---|---|---|
 | Start of day | `references/session-start.md` | Load from WorkDrive (ONBOARDING.md, Guia-Inicio-de-Sesion.md, the user's role logbooks: RESUME HERE and recent entries) and Zoho (open INGENIUS-238 tasks, the user's logged hours). Cross-check what is already done. Show a table with task number (PV1-Tnn), short description, dates, predecessors and their status, type, role, and what the logbook and time logs show done; propose order and parallel candidates; wait for the choice. |
-| Taking a task | `references/role-onboarding.md` | Assume the task's role, read that role's logbook RESUME HERE and the full task, report state / needs / first proposal. Then load `references/roles/<role>.md` and ask its questions. |
+| Taking a task | `references/role-onboarding.md` | Assume the task's role, read that role's logbook state (RESUME HERE and pending) and latest daily file, and the full task, report state / needs / first proposal. Then load `references/roles/<role>.md` and ask its questions. |
 | Working | `references/working-rules.md` + the role file | One task per session, agent proposes and user decides, ask when docs are silent, single writer per document, no commit/push/MR unless told. |
 | Human review / decision task | `references/human-decisions.md` | Prepare the review material and options; the decision is the user's; record it verbatim. |
-| Closing | `references/session-close.md` | Summary before upload → upload + verify → logbook entry → confirm hours, then log them → prepare pending/blocker task. |
+| Closing | `references/session-close.md` | Summary before upload → upload + verify → logbook entry (daily file + state file, ADR-VN-0005; repo `docs/BITACORA.md` for Dev) → confirm hours, then log them → prepare pending/blocker task. |
 | Project facts needed | `references/project-context.md` | Product scope, document map, stack decisions, ADR status. |
 
 ## The three non-negotiables

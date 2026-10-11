@@ -23,4 +23,4 @@ Requirements matrix referenced by the ADRs: 122 functional requirements (RF), 13
 .NET 8 modular monolith, PostgreSQL (geospatial search), REST/OpenAPI, Keycloak (OIDC/OAuth2), Azure cloud, Azure OpenAI for the AI agent, Next.js + Refine (admin), Flutter (mobile), Stripe Connect payments, Twilio SMS, Firebase FCM push, Mux video, xUnit tests, arc42 docs. Treat these as proposals when talking to the user; check the ADR status before stating one as decided.
 
 ## Team process
-Zoho Projects project `INGENIUS-238`; tasks `PV1-Tnn`; WorkDrive TeamFolder `VenueNexa` with ONBOARDING.md, Guia-Inicio-de-Sesion.md and per-role logbooks; GitLab for code. Ingenius marketplaces installed: governance-skills and sdlc-skills.
+Zoho Projects project `INGENIUS-238`; tasks `PV1-Tnn`; WorkDrive TeamFolder `VenueNexa` with ONBOARDING.md, Guia-Inicio-de-Sesion.md and per-role logbooks (a small state file plus one daily file per day in `Bitacoras/<ROL>/`, ADR-VN-0005; Dev work in each repo's `docs/BITACORA.md`); GitLab for code. Ingenius marketplaces installed: governance-skills and sdlc-skills.

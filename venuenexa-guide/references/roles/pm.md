@@ -13,4 +13,4 @@
 - ¿A quién asignar y con qué rol, predecesora y tipo de tarea?
 
 ## Outputs
-New/updated Zoho tasks (after confirmation), schedule changes, logbook entry in `Bitacora-PM.md`.
+New/updated Zoho tasks (after confirmation), schedule changes, logbook entry in today's file of `Bitacoras/PM/` and the state file `Bitacora-PM.md`.

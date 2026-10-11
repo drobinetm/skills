@@ -7,7 +7,7 @@ The decision belongs to the user. The agent's job is to make that decision fast 
 2. Prepare a review pack: what changed, what is uncertain, risks, and a checklist against the criteria.
 3. For a decision: present 2-4 options with trade-offs and a recommendation, citing sources (RF, spec section, ADR, principle).
 4. Ask the user for the decision using `AskUserQuestion`; allow free text.
-5. Record it: decision, who decided, date, rationale in the user's own words, follow-ups. Put it in the role logbook at close.
+5. Record it: decision, who decided, date, rationale in the user's own words, follow-ups. Put it in the role logbook at close (the day's entry, following `session-close.md`).
 
 ## Ask
 - ¿Qué criterio de aceptación pesa más aquí?

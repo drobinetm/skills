@@ -13,4 +13,4 @@
 - ¿Qué evidencia se guarda y dónde (WorkDrive)?
 
 ## Outputs
-Test plan/cases traced to RF, defect reports, evidence, logbook entry in `Bitacora-QA.md`.
+Test plan/cases traced to RF, defect reports, evidence, logbook entry in today's file of `Bitacoras/QA/` and the state file `Bitacora-QA.md`.

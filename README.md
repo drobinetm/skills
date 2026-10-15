@@ -14,6 +14,7 @@ A collection of agent skills. Each skill is a top-level folder with its entry po
 |-------|-------------|
 | [venuenexa-guide](venuenexa-guide/README.md) | Role-based session guide for the VenueNexa project (Ingenius): PV1-Tnn tasks, logbook and billable hours. |
 | [precise-research](precise-research/README.md) | Research and verification with labelled claims ([VERIFICADO]/[INFERIDO]/[DESCONOCIDO]) and cited sources. |
+| [token-discipline](token-discipline/README.md) | Rules to save context and tokens: locate before reading, filter output, edit once, answer briefly. |
 
 ## Quick install (any agent)
 
